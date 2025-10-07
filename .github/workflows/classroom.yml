@@ -44,8 +44,7 @@ jobs:
 
       - name: Run MediaProcessor
         run: |
-          cd out
-          java com.example.media.app.MediaProcessor
+          java -cp out com.example.media.app.MediaProcessor
 
   check-tracks:
     name: Validate tracks_output.txt

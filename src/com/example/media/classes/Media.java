@@ -21,9 +21,10 @@ public abstract class Media {
     }
 
     // TODO: Implement method that returns duration in minutes + seconds
-    // Example: "4 min 30 sec"
     public String getDurationInMinutes() {
-        return null; // TODO
+        int minutes = duration / 60;
+        int seconds = duration % 60;
+        return minutes + " min " + seconds + " sec";
     }
 
     @Override
